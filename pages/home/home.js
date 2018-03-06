@@ -41,7 +41,6 @@ Component({
         icon: 'icon-yuanlishi font-orange-1',
         color: ''
       }],
-    linklist: ['./sub/practice/practice', './sub/practice/practice', './sub/practice/practice', './sub/practice/practice', './sub/practice/practice', './sub/practice/practice', './sub/practice/practice','./sub/subjectlist/subjectlist'],
     indicatorDots: true,
     autoplay: true,
     interval: 5000,
@@ -61,15 +60,15 @@ Component({
     },
     // icon点击事件，跳转事件
     jump: (event)=> {
+      let linklist = ['./sub/practice/practice', './sub/practice/practice', './sub/practice/practice', './sub/practice/practice', './sub/practice/practice', './sub/practice/practice', './sub/practice/practice', './sub/subjectlist/subjectlist'];
       console.log(event.currentTarget.id);
-      console.log(this.data.linklist)
-      console.log(this.data.linklist[event.currentTarget.id]);
+      console.log(linklist[event.currentTarget.id]);
       wx.navigateTo({
-        url: this.data.linklist[event.currentTarget.id]
+        url:linklist[event.currentTarget.id]
       })
     },
     onLoad:()=>{
       console.log(app);
-    }
+    },
   },
 })

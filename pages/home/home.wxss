@@ -39,5 +39,5 @@ display: inline-block;
 .icon-text{
   display: inline-block;
   width: 100%;
-  font-size: 0.45rem;
+  font-size: 0.65rem;
 }

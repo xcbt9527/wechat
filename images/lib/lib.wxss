@@ -1,5 +1,32 @@
 @import "./color.wxss";
 @import "./font.wxss";
 .iconfont{
-  font-size: 1.75rem;
+  font-size: 2rem;
+}
+.font-3{
+  font-size: 3rem;
+}
+.font-55{
+  font-size: 0.55rem;
+}
+page{
+  background: rgba(222,222,222,0.3);
+}
+.f-l{
+  float: left;
+}
+.f-r{
+  float: right;
+}
+.m-r-10{
+  margin-right: 10px;
+}
+.m-t-10{
+  margin-top:10px;
+}
+.m-b-10{
+  margin-bottom: 10px;
+}
+.m-l-10{
+  margin-left: 10px;
 }

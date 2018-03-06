@@ -1,13 +1,40 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+<view>
+  <view class="header">
+  <block wx:if="{{!hasUserInfo && canIUse}}">
+     <view class="header-img f-l m-r-10">
+    <text class="iconfont icon-zhinenghua" style='font-size:2.5rem;'></text>
+  </view>
+    <view  open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="m-b-10"> 
+    <text class="btn">登录/注册</text>
+     </view>
+    <text class="font-55">记录学习进度，开启你的考证通关之旅 </text>
+    </block>
     <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="ul">
+    <view class="li">
+    <text class="iconfont icon-icon-1" style='font-size:1rem;margin-right:5px;'></text>
+    选择考试
+    <text class="f-r">自考</text>
+    </view>
+     <view class="li">
+    <text class="iconfont icon-zhinenghua" style='font-size:1rem;margin-right:5px;'></text>
+    我的资料
+    <text class="iconfont icon-youbianjiantou f-r"  style='font-size:0.75rem;'></text>
+    </view>
+     <view class="li">
+    <text class="iconfont icon-zhinenghua" style='font-size:1rem;margin-right:5px;'></text>
+    意见反馈
+    <text class="iconfont icon-youbianjiantou f-r" style='font-size:0.75rem;'></text>
+    </view>
+     <view class="li">
+    <text class="iconfont icon-zhinenghua" style='font-size:1rem;margin-right:5px;'></text>
+    关于我们
+    <text class="iconfont icon-youbianjiantou f-r" style='font-size:0.75rem;'></text>
+    </view>
   </view>
 </view>
