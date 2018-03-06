@@ -1,10 +1,14 @@
-<swiper indicator-dots="{{indicatorDots}}"  
-        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">  
-      <block wx:for="{{imgUrls}}" wx:key="link">  
-        <swiper-item>  
-           <navigator url="{{item.link}}" hover-class="navigator-hover">  
-            <image src="{{item.url}}" class="slide-image" width="355" height="150"/>  
-           </navigator>   
-        </swiper-item>  
-      </block>  
-</swiper>
+<view class="header">
+  <view class="header-top">
+    <text class="t-l">查看全面成绩预测</text>
+    <text class="t-r">英语（一）（专）<icon type="download" size="10" color="red"></icon></text>
+  </view>
+  <view class="ul">
+    <block wx:for="{{arr}}" wx:for-item="item">
+    <view class="li">
+    <image src="{{item.img}}" mode="scaleToFill" class="iconimg"></image>
+    <text class="icon-text">{{item.text}}</text>
+    </view>
+    </block>
+  </view>
+</view>

@@ -11,16 +11,28 @@ Component({
    * 组件的初始数据
    */
   data: {
-    imgUrls: [
+    arr: [
       {
-        link: '/pages/index/index',
-        url: 'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'
+        text: '考点智能练习',
+        img: '/images/icon/home.png'
       }, {
-        link: '/pages/logs/logs',
-        url: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg'
+        text: '章节智能练习',
+        img: '/images/icon/home.png'
       }, {
-        link: '/pages/test/test',
-        url: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+        text: '真题模考',
+        img: '/images/icon/home.png'
+      }, {
+        text: '巩固模考',
+        img: '/images/icon/home.png'
+      }, {
+        text: '错题练习',
+        img: '/images/icon/home.png'
+      }, {
+        text: '收藏',
+        img: '/images/icon/home.png'
+      }, {
+        text: '练习历史',
+        img: '/images/icon/home.png'
       }],
     indicatorDots: true,
     autoplay: true,

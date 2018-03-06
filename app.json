@@ -10,9 +10,8 @@
     "navigationBarBackgroundColor": "#f00",
     "navigationBarTitleText": "自考",
     "navigationBarTextStyle":"#fff",
-    "enablePullDownRefresh":true,
     "onReachBottomDistance":50,
-    "navigationStyle":"custom"
+    "navigationStyle":"default"
   },
   "debug":true,
   "networkTimeout":{
@@ -37,7 +36,7 @@
         "selectedIconPath": "images/icon/study1.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/vip/vip",
         "text": "vip",
         "iconPath": "images/icon/my.png",
         "selectedIconPath": "images/icon/my1.png"

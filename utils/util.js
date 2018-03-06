@@ -8,7 +8,12 @@ const formatTime = date => {
 
   return [year, month, day].map(formatNumber).join('/') + ' ' + [hour, minute, second].map(formatNumber).join(':')
 }
-
+const conf ={
+    host: 'http://localhost:8090/api',
+    appid: 'wxe31de532ace0ab98',
+    secret: 'a975e557797d8bd2b5a8f67059feab7c'
+  
+}
 const formatNumber = n => {
   n = n.toString()
   return n[1] ? n : '0' + n
@@ -31,5 +36,6 @@ const sendRrquest = (url, data, method)=> {
 };
 module.exports = {
   formatTime: formatTime,
-  post: sendRrquest
+  post: sendRrquest,
+  conf: conf
 }
