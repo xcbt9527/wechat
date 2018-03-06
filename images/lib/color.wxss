@@ -1,0 +1,27 @@
+.font-white{
+  color: #fff;
+}
+.font-gray{
+  color: rgba(0, 0, 0, 0.6);
+}
+.font-red{
+  color: #FF4040;
+}
+.font-yellow{
+  color: #FFEC8B;
+}
+.font-orange{
+  color: #FFA500;
+}
+.font-orange-1{
+  color: #EEC900;
+}
+.font-violet{
+  color: #FF83FA;
+}
+.font-cyan{
+  color:#BFEFFF;
+}
+.font-blue{
+  color:#6495ED;
+}

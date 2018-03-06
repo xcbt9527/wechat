@@ -2,8 +2,11 @@
   "pages":[
     "pages/home/home",
     "pages/index/index",
+    "pages/vip/vip",
     "pages/logs/logs",
-    "pages/selfexamination/selfexamination"
+    "pages/selfexamination/selfexamination",
+    "pages/home/sub/practice/practice",
+    "pages/home/sub/subjectlist/subjectlist"
   ],
   "window":{
     "backgroundTextStyle":"#f00",

@@ -1,4 +1,5 @@
 // pages/home/home.js
+const app = getApp()
 Component({
   /**
    * 组件的属性列表
@@ -14,46 +15,61 @@ Component({
     arr: [
       {
         text: '考点智能练习',
-        img: '/images/icon/home.png'
+        icon: 'icon-lianxi font-blue'
       }, {
         text: '章节智能练习',
-        img: '/images/icon/home.png'
+        icon: 'icon-zhinenghua font-orange',
+        color: ''
       }, {
         text: '真题模考',
-        img: '/images/icon/home.png'
+        icon: 'icon-lunwentimu font-yellow',
+        color: ''
       }, {
         text: '巩固模考',
-        img: '/images/icon/home.png'
+        icon: 'icon-gonggujieguo font-violet',
+        color: ''
       }, {
         text: '错题练习',
-        img: '/images/icon/home.png'
+        icon: 'icon-cuotiku font-red',
+        color: ''
       }, {
         text: '收藏',
-        img: '/images/icon/home.png'
+        icon: 'icon-icon- font-cyan',
+        color: ''
       }, {
         text: '练习历史',
-        img: '/images/icon/home.png'
+        icon: 'icon-yuanlishi font-orange-1',
+        color: ''
       }],
+    linklist: ['./sub/practice/practice', './sub/practice/practice', './sub/practice/practice', './sub/practice/practice', './sub/practice/practice', './sub/practice/practice', './sub/practice/practice','./sub/subjectlist/subjectlist'],
     indicatorDots: true,
     autoplay: true,
     interval: 5000,
-    duration: 1000,
-    userInfo: {}  
+    duration: 1000
   },
-
   /**
    * 组件的方法列表
    */
   methods: {
-    onShareAppMessage: function () {
+    // 分享
+    onShareAppMessage: ()=> {    
       return {
         title: '自考小程序',
         desc: '最全面的自考小程序!',
         path: '/page/home?id=123'
       }
+    },
+    // icon点击事件，跳转事件
+    jump: (event)=> {
+      console.log(event.currentTarget.id);
+      console.log(this.data.linklist)
+      console.log(this.data.linklist[event.currentTarget.id]);
+      wx.navigateTo({
+        url: this.data.linklist[event.currentTarget.id]
+      })
+    },
+    onLoad:()=>{
+      console.log(app);
     }
-  },
-  onLoad:()=>{
-    console.log(1);
   },
 })

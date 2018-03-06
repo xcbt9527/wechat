@@ -1,0 +1,5 @@
+@import "./color.wxss";
+@import "./font.wxss";
+.iconfont{
+  font-size: 1.75rem;
+}

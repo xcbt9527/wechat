@@ -1,13 +1,13 @@
 <view class="header">
   <view class="header-top">
     <text class="t-l">查看全面成绩预测</text>
-    <text class="t-r">英语（一）（专）<icon type="download" size="10" color="red"></icon></text>
+    <text class="t-r" bindtap="jump" id="7">英语（一）（专）<text class="iconfont icon-unie621" style='font-size:13px;margin:0 3px;'></text></text>
   </view>
   <view class="ul">
-    <block wx:for="{{arr}}" wx:for-item="item">
-    <view class="li">
-    <image src="{{item.img}}" mode="scaleToFill" class="iconimg"></image>
-    <text class="icon-text">{{item.text}}</text>
+    <block wx:for="{{arr}}" wx:key="text">
+    <view class="li" bindtap="jump" id="{{index}}">
+    <text class="iconfont {{item.icon}}"></text>
+    <text class="icon-text font-gray">{{item.text}}</text>
     </view>
     </block>
   </view>
