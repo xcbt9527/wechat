@@ -1,0 +1,26 @@
+/* pages/my/my.wxss */
+.header_bg{
+  height:200px;
+  width: 100%;
+}
+.header{
+  position: relative;
+}
+.header_profile{
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 40%;
+  margin: auto;
+  z-index: 99;
+  margin-top: 15%;
+}
+.userinfo-avatar{
+  width:75px;
+height:75px;
+border-radius:50%;
+display:block;
+margin:auto;  
+}

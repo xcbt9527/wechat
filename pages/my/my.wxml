@@ -1,0 +1,18 @@
+<!--pages/my/my.wxml-->
+<view>
+  <view class="header">
+     <image src="{{bgimg}}" class="header_bg"></image> 
+    <view class="header_profile">
+    <block wx:if="{{!hasUserInfo && canIUse}}">
+    <view open-type="getUserInfo" bindtap="getUserInfo">
+<image class="userinfo-avatar" src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3987166397,2421475227&fm=27&gp=0.jpg" background-size="cover"></image>
+      <view class="text-center" style='color:#fff;'>登录</view>
+      </view>
+    </block>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <view class="text-center">{{userInfo.nickName}}</view>
+    </block>
+    </view>
+  </view>
+</view>

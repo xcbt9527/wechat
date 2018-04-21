@@ -1,2 +1,9 @@
 <!--pages/vip/vip.wxml-->
-<text>pages/vip/vip.wxml</text>
+<view>
+<contact-button 
+  type="default-light" 
+  size="20"
+  session-from="weapp"
+>
+</contact-button> 
+</view>

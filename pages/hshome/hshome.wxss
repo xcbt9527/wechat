@@ -1,0 +1,33 @@
+/* pages/hshome/hshome.wxss */
+.scroll-view_H{
+  white-space: nowrap;
+}
+.scroll-view-item_H{
+  padding:10px;
+  font-size: 0.85rem;
+  color: #000;
+  display:inline-block;
+}
+.scroll-view-item_H1{
+  color: #FF404B;
+  border-bottom: 2px solid #FF404B;
+}
+.text_align{
+  text-align: center;
+}
+.new_title{
+  color: rgb(255,168,1);
+}
+.new_title_sub{
+  color: rgb(102,102,102);
+}
+.theme_title{
+  color: rgb(102,102,102);
+  font-size:0.65rem;
+}
+.icon_share{
+  width: 12px;
+  height: 16px;
+  float: right;
+  margin-right:10px;
+}

@@ -1,0 +1,31 @@
+<view>
+<swiper indicator-dots="true"
+  autoplay="true" interval="5000" duration="1000" indicator-active-color="#FF404B" catchtap="clickswiper">
+  <block wx:for="{{imgUrls}}"  wx:key="id">
+    <swiper-item>
+      <image data-postId="{{item.id}}" src="{{item.url}}" class="slide-image"  height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+  <scroll-view  scroll-x="true" class="scroll-view_H" scroll-x style="width: 100%;">
+  <view>
+  <text bindtap="changeclass" class="scroll-view-item_H {{ificationclass===item.id?'scroll-view-item_H1':''}}" wx:for="{{ification}}"  data-postId="{{item.id}}">{{item.text}}</text>
+  </view>
+  </scroll-view>
+  <view>
+  <view class="text_align m-b-10">
+  <view class="new_title" style='font-size:0.95rem;'>- <text class="p-10">最新主题</text> -</view>
+  <view class="new_title_sub" style='font-size:0.75rem;'><text>This latest topic</text></view>
+  </view>
+  <view>
+   <block wx:for="{{newtheme}}" wx:key="id" >
+   <view class="m-b-10">
+   <image data-postId="{{item.id}}" src="{{item.url}}" class="slide-image"  height="150"/>
+   <block class="theme_title"> <text class="p-10 theme_title">{{item.title}}</text></block>
+   <block>
+    <image src="{{share}}" class="icon_share" width="50" height="50"/></block>
+   </view>
+   </block>
+  </view>  
+  </view>
+</view>

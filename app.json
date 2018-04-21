@@ -1,17 +1,20 @@
 {
   "pages":[
+    "pages/hshome/hshome",
+    "pages/my/my",
     "pages/index/index",
     "pages/home/home",
     "pages/vip/vip",
     "pages/logs/logs",
+    "pages/youhuiquan/youhuiquan",
     "pages/selfexamination/selfexamination",
     "pages/home/sub/practice/practice",
     "pages/home/sub/subjectlist/subjectlist"
   ],
   "window":{
-    "backgroundTextStyle":"#f00",
-    "navigationBarBackgroundColor": "#f00",
-    "navigationBarTitleText": "自考",
+    "backgroundTextStyle":"#FF404B",
+    "navigationBarBackgroundColor": "#FF404B",
+    "navigationBarTitleText": "唯爱婚纱策划",
     "navigationBarTextStyle":"#fff",
     "onReachBottomDistance":50,
     "navigationStyle":"default"
@@ -24,28 +27,28 @@
   "downloadFile":60000
   },
   "tabBar": {
-    "selectedColor": "#af2f23",
+    "selectedColor": "#FF404B",
     "list": [
       {
-        "pagePath": "pages/home/home",
-        "text": "学习",
+        "pagePath": "pages/hshome/hshome",
+        "text": "店铺首页",
         "iconPath": "images/icon/home.png",
         "selectedIconPath": "images/icon/home1.png"
       },
       {
-        "pagePath": "pages/selfexamination/selfexamination",
-        "text": "直播",
-        "iconPath": "images/icon/study.png",
-        "selectedIconPath": "images/icon/study1.png"
+        "pagePath": "pages/youhuiquan/youhuiquan",
+        "text": "优惠券",
+        "iconPath": "images/icon/youhuiquan.png",
+        "selectedIconPath": "images/icon/youhuiquan1.png"
       },
       {
         "pagePath": "pages/vip/vip",
-        "text": "vip",
-        "iconPath": "images/icon/my.png",
-        "selectedIconPath": "images/icon/my1.png"
+        "text": "客服",
+        "iconPath": "images/icon/kefu.png",
+        "selectedIconPath": "images/icon/kefu1.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/my/my",
         "text": "我的",
         "iconPath": "images/icon/my.png",
         "selectedIconPath": "images/icon/my1.png"
